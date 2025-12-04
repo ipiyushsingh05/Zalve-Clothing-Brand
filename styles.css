@@ -1,0 +1,226 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f4f6;
+  color: #111827;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* Placeholder blocks (no images needed) */
+.placeholder {
+  background: #d1d5db;
+  border: 1px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ph-text {
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* Navbar */
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(243, 244, 246, 0.9);
+  backdrop-filter: blur(12px);
+  padding: 1rem 7vw;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #6b7280;
+}
+.nav-links a:hover {
+  color: #111827;
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 7vw;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 2rem;
+}
+
+.hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  color: #6b7280;
+  max-width: 26rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border: 1px solid transparent;
+}
+
+.primary-btn {
+  background: #111827;
+  color: #fff;
+}
+
+.ghost-btn {
+  background: transparent;
+  border-color: #111827;
+  color: #111827;
+}
+
+/* Hero placeholder */
+.hero-image {
+  height: 350px;
+  border-radius: 1.2rem;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 7vw;
+}
+
+.section-alt {
+  background: #e5e7eb;
+}
+
+.section-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.4rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.product-image {
+  height: 240px;
+}
+
+.product-tag {
+  position: absolute;
+  background: #f3f4f6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  margin: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+}
+
+/* Lookbook grid */
+.lookbook-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.lookbook-item {
+  height: 180px;
+  border-radius: 1rem;
+}
+
+.lookbook-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+  height: 380px;
+}
+
+.lookbook-item.wide {
+  grid-column: span 2;
+}
+
+/* About */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+}
+
+.about-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+}
+
+.about-meta {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Contact */
+.contact-layout {
+  displ
